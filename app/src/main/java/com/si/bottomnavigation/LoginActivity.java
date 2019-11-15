@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
                     return;
                 }
 
-                if (un.equals("samyam") && pwd.equals("password")) {
+                if (un.equals("pranish") && pwd.equals("password")) {
                     Toast.makeText(LoginActivity.this, "Welcome " + un, Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
 

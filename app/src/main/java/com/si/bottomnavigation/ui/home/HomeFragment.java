@@ -26,13 +26,13 @@ public class HomeFragment extends Fragment {
         recyclerView = root.findViewById(R.id.recycle);
 
         List<HomeViewModel> students = new ArrayList<>();
-        HomeViewModel home = new HomeViewModel("Samyam Dabadi","21","Naikap","male");
+        HomeViewModel home = new HomeViewModel("Pranish KC","23","Airport Height","male");
 
         students = home.getSlist();
 
         if(students.isEmpty()) {
             students.add(home);
-            students.add(new HomeViewModel("Abhishek Dhakal", "20", "London", "female"));
+            students.add(new HomeViewModel("Paige", "23", "Norwich", "female"));
         }
 
 
