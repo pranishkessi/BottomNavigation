@@ -1,19 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingHorizontal="15dp"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical" >
 
     <TextView
-        android:id="@+id/text_notifications"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="ADD STUDENTS"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:padding="8dp"
+        android:hint="Enter Name"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/et_bg"/>
+
+    <EditText
+        android:id="@+id/etaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:hint="Enter Address"
+        android:padding="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/et_bg"/>
+
+    <EditText
+        android:id="@+id/etage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:padding="8dp"
+        android:hint="Enter Age"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/et_bg"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Gender"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="24dp"
+        android:layout_marginTop="30dp"/>
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:textSize="24dp">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="Female"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_marginTop="20dp"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:background="@drawable/button"
+        android:textColor="#fff"
+        />
+
+
+
+</LinearLayout>
